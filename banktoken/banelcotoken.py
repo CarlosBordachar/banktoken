@@ -61,7 +61,7 @@ def fetch_encrypted_payload(bank_id, activation_code):
         if r.content == b'URL Incorrecta - contacte Soporte Security':
             raise RuntimeError("Got 'incorrect url' error - bad token?")
         else:
-            raise RuntimeError("Got unknown error")
+            raise RuntimeError("Got unknown error: %r" % r.content)
     else:
         raise RuntimeError("Got unexpected content type: %r" % content_type)
 
