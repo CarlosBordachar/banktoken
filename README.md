@@ -48,6 +48,14 @@ Para ingreso manual: ingresar la clave Base32, y cambiar el período a 40 segund
 
 **KeePassXC**: Funciona ingresando manualmente la clave Base32 en Use Custom Settings. Seleccionar SHA-1, 40 segundos y 6 dígitos.
 
+**KeePass 2**: Funciona ingresando manualmente la clave Base32 
+en Edit Entry (Quick) → OTP Generator Settings... → Time-Based (TOTP). Período 40 segundos.
+O bien completando los campos especiales «TimeOtp-Secret-Base32» y «TimeOtp-Period» en Advanced → String fields.
+
+**Aegis Authenticator para Android**: No funciona con código QR.
+Para ingreso manual: ingresar la clave Base32, y cambiar el período a 40 segundos en Advanced Settings. 
+El indicador de tiempo representa el nuevo período.
+
 **Authy**: *No funciona.*
 
 <!-- (TODO: agregar instrucciones de cómo probar si una app es compatible) -->
